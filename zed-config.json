@@ -1,18 +1,11 @@
-// Zed keymap
-//
-// For information on binding keys, see the Zed
-// documentation: https://zed.dev/docs/key-bindings
-//
-// To see the default key bindings run `zed: open default keymap`
-// from the command palette.
 [
   {
     "bindings": {
-      "ctrl-t": "terminal_panel::ToggleFocus",
-      "ctrl-y": "project_panel::ToggleFocus",
-      "ctrl-w": "pane::CloseActiveItem",
-      "ctrl-b": "workspace::ToggleLeftDock",
-      "ctrl-n": "workspace::ToggleRightDock"
+      "super-t": "terminal_panel::ToggleFocus",
+      "super-y": "project_panel::ToggleFocus",
+      "super-w": "pane::CloseActiveItem",
+      "super-b": "workspace::ToggleLeftDock",
+      "super-n": "workspace::ToggleRightDock"
     }
   },
   {
@@ -22,14 +15,14 @@
       "win-shift-up": "editor::DuplicateLineUp",
       "win-down": "editor::MoveLineDown",
       "win-up": "editor::MoveLineUp",
-      "ctrl-shift-down": "editor::AddSelectionBelow",
-      "ctrl-shift-up": "editor::AddSelectionAbove"
+      "super-shift-down": "editor::AddSelectionBelow",
+      "super-shift-up": "editor::AddSelectionAbove"
     }
   },
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      "ctrl-a": ["workspace::SendKeystrokes", "g g V G y"]
+      "super-a": ["workspace::SendKeystrokes", "g g V G"]
     }
   }
 ]
